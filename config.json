@@ -11,7 +11,7 @@
           "settings":{
               "clients":[
                   {
-                      "id":"de04add9-5c68-8bab-950c-08cd5320df18",
+                      "id":"6e4a84be-0990-449e-9da8-0d376cd63a6b",
                       "flow":"xtls-rprx-direct"
                   }
               ],
@@ -77,11 +77,11 @@
               "network":"ws",
               "security":"none",
               "wsSettings":{
-                  "path":"/vless"
+                  "path":"/2bcdf3e3-6700-4c2c-a079-8c0f9ef34eb4"
               }
           },
           "sniffing":{
-              "enabled":true,
+              "enabled":false,
               "destOverride":[
                   "http",
                   "tls",
