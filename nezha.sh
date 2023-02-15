@@ -22,13 +22,11 @@ check_dependencies() {
 download_agent() {
   URL=$(wget -qO- -4 "https://api.github.com/repos/naiba/nezha/releases/latest" | grep -o "https.*linux_amd64.zip")
   wget -t 2 -T 10 -N ${URL}
-  unzip -qod ./ nezha-agent_linux_amd64.zip && rm -f nezha-agent_linux_amd64.zip
+  rm -f nezha-agent_linux_amd64.zip
 }
 
 # 运行客户端
-run() {
-  ./nezha-agent -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY}
-}
+
 
 check_variable
 check_dependencies
